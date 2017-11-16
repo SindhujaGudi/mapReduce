@@ -1,0 +1,9 @@
+Here are the commands to run a cloudera machine.
+
+head -500 com-orkut.ungraph.txt
+hdfs dfs -mkdir /user/cloudera/P3
+hdfs dfs -put text.txt /user/cloudera/P3
+hadoop jar MR.jar MR /user/cloudera/P3/text.txt /user/cloudera/output
+hdfs dfs -ls /user/cloudera/P3/output/part-00000
+hadoop jar Bonus.jar Bonus /user/cloudera/P3/text.txt /user/cloudera/bonusOutput
+hdfs dfs -ls /user/cloudera/P3/bonusOutput/part-00000
