@@ -1,4 +1,4 @@
-Here are the commands to run a cloudera machine.
+Here are the commands to run on a cloudera machine.
 
 head -500 com-orkut.ungraph.txt
 hdfs dfs -mkdir /user/cloudera/P3
